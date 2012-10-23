@@ -1,0 +1,252 @@
+{
+    "nome": "PredicaoDesempenho",
+    "grupoAlias": {
+        "nome": "PredicaoDesempenho",
+        "aliasCollection": [
+            {
+                "nome": "I",
+                "valor": "Idade"
+            },
+            {
+                "nome": "T",
+                "valor": "TemperaturaDoAr"
+            },
+            {
+                "nome": "UR",
+                "valor": "UmidadeRelativa"
+            },
+            {
+                "nome": "GP",
+                "valor": "GanhoPeso"
+            },
+            {
+                "nome": "I_I",
+                "valor": "IdadeI"
+            },
+            {
+                "nome": "I_II",
+                "valor": "IdadeII"
+            },
+            {
+                "nome": "I_III",
+                "valor": "IdadeIII"
+            },
+            {
+                "nome": "T_I",
+                "valor": "TemperaturaI"
+            },
+            {
+                "nome": "T_II",
+                "valor": "TemperaturaII"
+            },
+            {
+                "nome": "T_III",
+                "valor": "TemperaturaIII"
+            },
+            {
+                "nome": "T_IV",
+                "valor": "TemperaturaIV"
+            },
+            {
+                "nome": "T_V",
+                "valor": "TemperaturaV"
+            },
+            {
+                "nome": "UR_I",
+                "valor": "UmidadeRelativaI"
+            },
+            {
+                "nome": "UR_II",
+                "valor": "UmidadeRelativaII"
+            },
+            {
+                "nome": "UR_III",
+                "valor": "UmidadeRelativaIII"
+            },
+            {
+                "nome": "GP_I",
+                "valor": "GanhoPesoI"
+            },
+            {
+                "nome": "GP_II",
+                "valor": "GanhoPesoII"
+            },
+            {
+                "nome": "GP_III",
+                "valor": "GanhoPesoIII"
+            },
+            {
+                "nome": "GP_IV",
+                "valor": "GanhoPesoIV"
+            },
+            {
+                "nome": "GP_V",
+                "valor": "GanhoPesoV"
+            },
+            {
+                "nome": "GP_VI",
+                "valor": "GanhoPesoVI"
+            },
+            {
+                "nome": "GP_VII",
+                "valor": "GanhoPesoVII"
+            },
+            {
+                "nome": "GP_VIII",
+                "valor": "GanhoPesoVIII"
+            },
+            {
+                "nome": "GP_IX",
+                "valor": "GanhoPesoIX"
+            },
+            {
+                "nome": "GP_X",
+                "valor": "GanhoPesoX"
+            },
+            {
+                "nome": "GP_XI",
+                "valor": "GanhoPesoXI"
+            }
+        ]
+    },
+    "baseDeRegra": {
+        "nome": "PredicaoDesempenho",
+        "regras": [
+            {
+                "regra": "<IF> (I==I_I   && T==T_I  ) && UR==UR_I   <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_I  ) && UR==UR_II  <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_I  ) && UR==UR_III <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_II ) && UR==UR_I   <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_II ) && UR==UR_II  <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_II ) && UR==UR_III <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_III) && UR==UR_I   <THEN> GP==GP_IV"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_III) && UR==UR_II  <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_III) && UR==UR_III <THEN> GP==GP_III"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_IV ) && UR==UR_I   <THEN> GP==GP_II"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_IV ) && UR==UR_II  <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_IV ) && UR==UR_III <THEN> GP==GP_II"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_V  ) && UR==UR_I   <THEN> GP==GP_II"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_V  ) && UR==UR_II  <THEN> GP==GP_II"
+            },
+            {
+                "regra": "<IF> (I==I_I   && T==T_V  ) && UR==UR_III <THEN> GP==GP_III"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_I  ) && UR==UR_I   <THEN> GP==GP_IV"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_I  ) && UR==UR_II  <THEN> GP==GP_V"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_I  ) && UR==UR_III <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_II ) && UR==UR_I   <THEN> GP==GP_I"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_II ) && UR==UR_II  <THEN> GP==GP_V"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_II ) && UR==UR_III <THEN> GP==GP_V"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_III) && UR==UR_I   <THEN> GP==GP_V"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_III) && UR==UR_II  <THEN> GP==GP_V"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_III) && UR==UR_III <THEN> GP==GP_VII"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_IV ) && UR==UR_I   <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_IV ) && UR==UR_II  <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_IV ) && UR==UR_III <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_V  ) && UR==UR_I   <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_V  ) && UR==UR_II  <THEN> GP==GP_VII"
+            },
+            {
+                "regra": "<IF> (I==I_II  && T==T_V  ) && UR==UR_III <THEN> GP==GP_VII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_I  ) && UR==UR_I   <THEN> GP==GP_VIII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_I  ) && UR==UR_II  <THEN> GP==GP_VIII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_I  ) && UR==UR_III <THEN> GP==GP_VIII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_II ) && UR==UR_I   <THEN> GP==GP_VII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_II ) && UR==UR_II  <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_II ) && UR==UR_III <THEN> GP==GP_XI"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_III) && UR==UR_I   <THEN> GP==GP_IX"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_III) && UR==UR_II  <THEN> GP==GP_VI"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_III) && UR==UR_III <THEN> GP==GP_X"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_IV ) && UR==UR_I   <THEN> GP==GP_X"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_IV ) && UR==UR_II  <THEN> GP==GP_VIII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_IV ) && UR==UR_III <THEN> GP==GP_VIII"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_V  ) && UR==UR_I   <THEN> GP==GP_IX"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_V  ) && UR==UR_II  <THEN> GP==GP_IX"
+            },
+            {
+                "regra": "<IF> (I==I_III && T==T_V  ) && UR==UR_III <THEN> GP==GP_VIII \n"
+            }
+        ]
+    }
+}

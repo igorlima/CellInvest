@@ -1,0 +1,10 @@
+Dump all databases for backup. Backup file is sql commands to recreate all db's.
+$ mysqldump -u root -ppassword --opt >/tmp/alldatabases.sql
+
+Dump one database for backup.
+$ mysqldump -u username -ppassword --databases databasename >/tmp/databasename.sql
+
+Dump a table from a database.
+$ mysqldump -c -u username -ppassword databasename tablename > /tmp/databasename.tablename.sql
+
+

@@ -1,0 +1,23 @@
+{
+    "nome": "Neutro",
+    "funcoes": [
+        {
+            "txFuncao": "(x-35)/15",
+            "dominio": {
+                "limiteInferior": 35,
+                "limiteSuperior": 50,
+                "incluiLimiteInferior": true,
+                "incluiLimiteSuperior": false
+            }
+        },
+        {
+            "txFuncao": "1+(x-50)/(-15)",
+            "dominio": {
+                "limiteInferior": 50,
+                "limiteSuperior": 65,
+                "incluiLimiteInferior": true,
+                "incluiLimiteSuperior": false
+            }
+        }
+    ]
+}

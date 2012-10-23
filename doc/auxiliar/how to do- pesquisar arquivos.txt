@@ -1,0 +1,9 @@
+Pesquisando arquivos pelo seu conteúdo em modo texto
+find ./ | xargs grep -s -a -i "Contabilidade" |less
+
+Outros Exemplos:
+#find /etc -iname *.conf -ls -size +10k (Exibe no formato do comando 'ls -ls' todos os arquivos com extensão .conf no diretório /etc independente da terem ou não letras maiúsculas no nome e com tamanho maior que 10 Kilobytes).
+
+#find / -user root -ls -empty -delete (Lista todos os arquivos com tamanho zero no formato do comando ls -ls e os apaga)
+
+#find / -executable -type f -name arquivo (Procura por arquivos de nome arquivo no diretório raiz com atributo de arquivo executável). 

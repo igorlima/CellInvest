@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="contextPath">/Kanban</Set>
+  <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/Kanban.war</Set>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Optional context configuration                                  -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <Set name="extractWAR">true</Set>
+  <Set name="copyWebDir">false</Set>
+ 
+  <Get name="securityHandler">
+    <Set name="loginService">
+      <New class="org.eclipse.jetty.security.JDBCLoginService">
+            <Set name="name">Personnel</Set>
+            <Set name="config"><SystemProperty name="jetty.home" default="."/>/etc/jdbcRealm.properties</Set>
+      </New>
+    </Set>
+    <Set name="checkWelcomeFiles">true</Set>
+  </Get>
+
+</Configure>

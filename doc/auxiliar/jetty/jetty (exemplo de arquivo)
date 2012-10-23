@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# jetty        
+#
+# chkconfig: 
+# description: 	Start up the Jetty servlet engine.
+
+# Source function library.
+. /etc/init.d/functions
+
+
+RETVAL=$?
+JETTY_HOME="/opt/jetty/jetty-hightide-8.1.0.RC2"
+
+case "$1" in
+ start)
+        if [ -f $JETTY_HOME/bin/jetty.sh ];
+          then
+	    echo $"Starting Jetty"
+            $JETTY_HOME/bin/jetty.sh start;
+        fi
+	;;
+ stop)
+        if [ -f $JETTY_HOME/bin/jetty.sh ];
+          then
+	    echo $"Stopping Jetty"
+            $JETTY_HOME/bin/jetty.sh stop;
+        fi
+ 	;;
+ *)
+ 	echo $"Usage: $0 {start|stop}"
+	exit 1
+	;;
+esac
+
+exit $RETVAL

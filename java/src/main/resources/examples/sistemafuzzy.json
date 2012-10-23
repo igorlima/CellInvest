@@ -1,0 +1,17 @@
+{
+    "nome": "Teste",
+    "maquinas": [
+        {
+            "idSistemaFuzzy": null,
+            "idMaquinaInferencia": null,
+            "prioridade": null
+        }
+    ],
+    "universos": [
+        {
+            "idSistemaFuzzy": null,
+            "idUniversoDeDiscursoFuzzy": null,
+            "prioridade": null
+        }
+    ]
+}

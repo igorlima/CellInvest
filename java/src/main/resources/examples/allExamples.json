@@ -1,0 +1,34 @@
+{
+    "examples": [
+    	{
+            "name": "dominio",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.Dominio"
+            
+        },
+        {
+            "name": "funcao",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.Funcao"
+            
+        },
+        {
+            "name": "conjuntofuzzy",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.ConjFuzzy"
+            
+        },
+        {
+            "name": "universodediscursofuzzy",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.UniversoDeDiscursoFuzzy"
+            
+        },
+        {
+            "name": "maquinainferencia",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.MaquinaInferencia"
+            
+        },
+        {
+            "name": "sistemafuzzy",
+            "type": "com.eatj.igorribeirolima.fuzzylogic.model.domain.entity.SistemaFuzzy"
+            
+        }
+    ]
+}

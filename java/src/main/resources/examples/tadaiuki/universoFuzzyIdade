@@ -1,0 +1,108 @@
+{
+    "dominio": {
+        "limiteInferior": 0,
+        "limiteSuperior": 21,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true,
+        "idDominio": null
+    },
+    "nome": "Idade",
+    "idUniversoDeDiscursoFuzzy": null,
+    "conjuntosFuzzy": [
+        {
+            "idConjFuzzy": null,
+            "nome": "IdadeI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 0,
+                        "limiteSuperior": 7,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 7,
+                        "limiteSuperior": 8,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-7)/(-1)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "IdadeII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 7,
+                        "limiteSuperior": 8,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "x-7"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 8,
+                        "limiteSuperior": 14,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 14,
+                        "limiteSuperior": 15,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-14)/(-1)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "IdadeIII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 14,
+                        "limiteSuperior": 15,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "x-14"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 15,
+                        "limiteSuperior": 21,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                }
+            ]
+        }
+    ]
+}

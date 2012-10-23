@@ -1,0 +1,1 @@
+exec( "C:\Program Files (x86)\scilab-5.2.1\ANN_Toolbox_0.4.2.3\loader.sce" );

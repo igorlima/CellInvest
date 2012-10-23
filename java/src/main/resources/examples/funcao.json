@@ -1,0 +1,9 @@
+{
+    "txFuncao": "1+x/(-35)",
+    "dominio": {
+        "limiteInferior": 0,
+        "limiteSuperior": 100,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true
+    }
+}

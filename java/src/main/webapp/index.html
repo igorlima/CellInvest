@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Fuzzy Logic with RNA</title>
+    <meta name="description" content="Dissertação de Mestrado">
+    <meta name="author" content="Igor Ribeiro Lima">
+    <link rel="shortcut icon" href="fuzzylogic.ico" type="image/x-icon">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="css/fuzzylogic.css" rel="stylesheet">
+    
+  </head>
+  
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Fuzzy Logic - RNA</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a data-toggle="modal" href="#modal-objetivo" data-backdrop="true" data-keyboard="true">Objetivo</a></li>
+              <li><a data-toggle="modal" href="#modal-fuzzylogic" data-backdrop="true" data-keyboard="true">Lógica Fuzzy</a></li>
+              <li><a data-toggle="modal" href="#modal-rna" data-backdrop="true" data-keyboard="true">RNA</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Autores <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://lattes.cnpq.br/6133618225801501" target="_blank">Igor Ribeiro Lima</a></li>
+                  <li><a href="http://lattes.cnpq.br/5009442255294234" target="_blank">Sérgio Martins de Souza</a></li>
+                  <li><a href="http://lattes.cnpq.br/1320324289662918" target="_blank">Heitor Augustus Xavier Costa</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://www.ufla.br/" target="_blank">Universidade Federal de Lavras</a></li>
+                </ul>
+              </li>
+              <li><a href="/FuzzyLogic/logout" target="_blank">Logout</a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="content">
+      
+        <div class="accordion" id="parentaccordion">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#parentaccordion" href="#collapseLogicaFuzzy">
+                Lógica Fuzzy
+              </a></h3>
+            </div>
+            <div id="collapseLogicaFuzzy" class="accordion-body collapse" style="height: 0px; ">
+              <div class="accordion-inner">
+              
+                <ul id="tabLogicaFuzzy" class="nav nav-tabs">
+				          <li class="active"><a data-toggle="tab" href="#sistemafuzzy">Sitema Fuzzy</a></li>
+				          <li><a data-toggle="tab" href="#universofuzzy">Universo Fuzzy</a></li>
+				        </ul>
+				        <div id="my-tab-content" class="tab-content">
+				          <div class="tab-pane active" id="sistemafuzzy">
+				            <form class="form-horizontal">
+				              <fieldset>
+				                <div class="control-group">
+				                  <label class="control-label" for="nomeSistemaFuzzy">Nome</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="nomeSistemaFuzzy" data-provide="typeahead" rows="1"></textarea>
+				                    <p class="help-block">Digite o nome do sistema fuzzy</p>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="taEntradaSistemaFuzzy">Entrada</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="taEntradaSistemaFuzzy" rows="2"></textarea>
+				                    <p class="help-block">Exemplo de entrada: [5.0, 28.0, 60.0]</p>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="taSaidaSistemaFuzzy">Conjunto Fuzzy de Saída</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="taSaidaSistemaFuzzy" rows="5" disabled="disabled"></textarea>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="taDefuzzyficacao">Defuzzyficação</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="taDefuzzyficacao" rows="3" disabled="disabled"></textarea>
+				                  </div>
+				                </div>
+				              </fieldset>
+				            </form>
+				            <div class="form-actions" style="text-align: right;">
+				              <button id="btCalcularSistemaFuzzy" class="btn btn-danger" data-loading-text="aguarde..." onclick="calcularSistemaFuzzy()">Calcular</button>
+				            </div>
+				          </div>
+				          
+				          <div class="tab-pane" id="universofuzzy">
+				            <form class="form-horizontal">
+				              <fieldset>
+				                <div class="control-group">
+				                  <label class="control-label" for="nomeUniversoFuzzy">Nome</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="nomeUniversoFuzzy" data-provide="typeahead" rows="1"></textarea>
+				                    <p class="help-block">Digite o nome do universo fuzzy</p>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="taEntradaUniversoFuzzy">Entrada</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="taEntradaUniversoFuzzy" rows="2"></textarea>
+				                    <p class="help-block">Exemplo de entrada: 5.0</p>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="taSaidaUniversoFuzzy">Conjunto Fuzzy de Saída</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="taSaidaUniversoFuzzy" rows="5" disabled="disabled"></textarea>
+				                  </div>
+				                </div>
+				              </fieldset>
+				            </form>
+				            <div class="form-actions" style="text-align: right;">
+				              <button id="btCalcularUniversoFuzzy" class="btn btn-danger" data-loading-text="aguarde..." onclick="calcularUniversoFuzzy()">Calcular</button>
+				            </div>
+				          </div>
+				          
+				        </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#parentaccordion" href="#collapseRedesNeurais">
+                Redes Neurais
+              </a></h3>
+            </div>
+            <div id="collapseRedesNeurais" class="accordion-body collapse" style="height: 0px; ">
+              <div class="accordion-inner">
+                
+                <br>
+                <form class="form-horizontal">
+	                <fieldset>
+	                  <div class="control-group" style="display:none">
+	                    <label class="control-label" for="path_arquivo_rna">Caminho</label>
+	                    <div class="controls">
+	                      <textarea class="input-xxlarge" id="path_arquivo_rna" rows="2">/opt/scilab/dados_rna/RNA_ANALISE_TECNICA/RNA_ANALISE_TECNICA.sce</textarea>
+	                      <p class="help-block">Digite o caminho do arquivo. Utilize a 'Consulta' caso necessário.</p>
+	                    </div>
+	                  </div>
+	                  <div class="control-group">
+	                    <label class="control-label" for="taConteudoArquivoRNA">Entrada</label>
+	                    <div class="controls">
+	                      <textarea class="input-xxlarge" id="taConteudoArquivoRNA" rows="5"></textarea>
+	                    </div>
+	                  </div>
+	                  <div class="control-group">
+	                    <label class="control-label" for="taSaidaDoArquivoExecutado">Saída</label>
+	                    <div class="controls">
+	                      <textarea class="input-xxlarge" id="taSaidaDoArquivoExecutado" rows="5" disabled="disabled"></textarea>
+	                    </div>
+	                  </div>
+	                </fieldset>
+	              </form>
+	              <div class="form-actions" style="text-align: right;">
+	                <button id="btExecutarArquivoRna" class="btn btn-success" data-loading-text="aguarde..."  onclick="execucao_arquivo_rna()">Executar</button>
+	              </div>
+                
+              </div>
+            </div>
+          </div>
+          
+            
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#parentaccordion" href="#collapseAnaliseTecnica">
+                Análise Técnica
+              </a></h3>
+            </div>
+            <div id="collapseAnaliseTecnica" class="accordion-body collapse">
+              <div class="accordion-inner">
+                
+                <fieldset>
+				          <div class="control-group">
+				            <input id="inputStrAtivo" class="span2" type="text" placeholder="código ativo" style="height:28"/>
+				            <button id="btGetAnaliseTecnica" class="btn" data-loading-text="aguarde..." onclick="getDadosAnaliseTecnica()" style="margin-top: -8px;"><i class="icon-refresh"></i></button>
+				          </div>
+				        </fieldset>
+				        <br>
+				        <ul id="tabAnaliseTecnica" class="nav nav-tabs">
+				          <li class="active"><a data-toggle="tab" href="#analisetecnicainput">Dados de Entrada</a></li>
+				          <li><a data-toggle="tab" href="#analisetecnicatable">Indicadores</a></li>
+				          <li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gráficos <b class="caret"></b></a>
+				            <ul class="dropdown-menu">
+				              <li><a data-toggle="tab" href="#analisetecnicapreco">Preço</a></li>
+				              <li><a data-toggle="tab" href="#analisetecnicaifr">IFR</a></li>
+				              <li><a data-toggle="tab" href="#analisetecnicaestocastico">Estocástico</a></li>
+				              <li><a data-toggle="tab" href="#analisetecnicamacd">Macd</a></li>
+				              <li><a data-toggle="tab" href="#analisetecnicahistograma">Histograma</a></li>
+				              <li><a data-toggle="tab" href="#analisetecnicaobv">OBV</a></li>
+				            </ul>
+				          </li>
+				        </ul>
+				        <div id="tab_analisetecnica" class="tab-content">
+				          <div class="tab-pane active" id="analisetecnicainput">
+				            <form class="form-horizontal">
+				              <fieldset>
+				                <div class="control-group">
+				                  <label class="control-label" for="valoresdeentradamodelagemfuzzy">Lógica Fuzzy / Redes Neurais</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="valoresdeentradamodelagemfuzzy" rows="3"></textarea>
+				                    <p class="help-block">
+				                      <a href='#' rel='tooltip' title="Índice de Força Relativa [0, 100]">IFR</a>, 
+				                      <a href='#' rel='tooltip' title="Estocástico [0, 100]">EST</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado da distância da linha macd ao eixo zero [-1, 1]">linhamacd</a>, 
+				                      <a href='#' rel='tooltip' title="LinMACD - LinSinal: diferença dos valores normalizados da linha macd e da linha de sinal [-2, 2]">difmacd</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressao linear dos três últimos valores da linha macd [-1.57, 1.57]">alphamacd</a>, 
+				                      <a href='#' rel='tooltip' title="m1 - m2: diferença do ângulo da linha macd e do ângulo da linha de sinal [-3.14, 3.14]">difalphamacd</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado da distância do histrograma ao eixo zero [0, 1]">hist</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressão linear dos três últimos valores do histrograma [-1.57, 1.57]">alphahist</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressão linear dos três últimos valores do obv [-1.57, 1.57]">alphaobv</a> 
+				                    </p>
+				                    <p class="help-block">Os valores IFR e Estocástico devem ser normalizados entre 0 e 1, caso utilize as redes neurais</p>
+				                    <div class="help-block">
+				                      <div class="btn-toolbar">
+				                        <div class="btn-group">
+				                          <a class="btn" onclick="var value = $('#valorminimo'); value.html( parseInt( value.html() )-1 );"><i class="icon-chevron-left"></i></a>
+				                          <a class="btn" onclick="var value = $('#valorminimo'); value.html( parseInt( value.html() )+1 );"><i class="icon-chevron-right"></i></a>
+				                        </div>
+				                        <div class="btn-group">   
+				                          <a class="btn disabled" ><b id="valorminimo">1</b></a>
+				                          <a class="btn disabled" ><b id="valormaximo">9</b></a>
+				                        </div>
+				                        <div class="btn-group">
+				                          <a class="btn" onclick="var value = $('#valormaximo'); value.html( parseInt( value.html() )-1 );"><i class="icon-chevron-left"></i></a>
+				                          <a class="btn" onclick="var value = $('#valormaximo'); value.html( parseInt( value.html() )+1 );"><i class="icon-chevron-right"></i></a>
+				                        </div>
+				                        <div class="btn-group">
+				                          <a class="btn btn-info" onclick="alterar_entrada_de_dados_da_modelagem( 'taEntradaSistemaFuzzy', 'valorminimo', 'valormaximo' );">Lógica Fuzzy</a>
+				                          <a class="btn btn-info" onclick="alterar_entrada_de_dados_da_modelagem( 'taConteudoArquivoRNA', 'valorminimo', 'valormaximo' );">Redes Neurais</a>
+				                        </div>
+				                      </div>
+				                    </div>
+				                  </div>
+				                </div>
+				                <div class="control-group">
+				                  <label class="control-label" for="valoresentradamodelagemrna">Outros Valores</label>
+				                  <div class="controls">
+				                    <textarea class="input-xxlarge" id="valoresentradamodelagemrna" rows="2"></textarea>
+				                    <p class="help-block">
+				                      <a href='#' rel='tooltip' title="Valor normalizado do Índice de Força Relativa [0, 1]">IFR</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado do indicador Estocástico [0, 1]">EST</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado da distância da linha macd ao eixo zero [-1, 1]">linhamacd</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado da distância da linha de sinal ao eixo zero [-1, 1]">linhasinal</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressao linear dos três últimos valores da linha macd [-1.57, 1.57]">alphalinhamacd</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressao linear dos três últimos valores da linha de sinal [-1.57, 1.57]">alphalinhasinal</a>, 
+				                      <a href='#' rel='tooltip' title="Valor normalizado da distância do histrograma ao eixo zero [0, 1]">hist</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressão linear dos três últimos valores do histrograma [-1.57, 1.57]">alphahist</a>, 
+				                      <a href='#' rel='tooltip' title="Valor do ângulo (pi) da regressão linear dos três últimos valores do obv [-1.57, 1.57]">alphaobv</a>
+				                    </p>
+				                  </div>
+				                </div>
+				              </fieldset>
+				            </form>
+				          </div>
+				          <div class="tab-pane" id="analisetecnicatable"> </div>
+				          <div class="tab-pane" id="analisetecnicapreco"> </div>
+				          <div class="tab-pane" id="analisetecnicaifr"> </div>
+				          <div class="tab-pane" id="analisetecnicaestocastico"> </div>
+				          <div class="tab-pane" id="analisetecnicamacd"> </div>
+				          <div class="tab-pane" id="analisetecnicahistograma"> </div>
+				          <div class="tab-pane" id="analisetecnicaobv"> </div>
+				        </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="container">
+      <footer>
+        <p>© Copyright 2011 - @igorribeirolima</p>
+      </footer>
+    </div>
+    
+    <div id="modal-objetivo" class="modal hide fade" style="display: none;">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Objetivo</h3>
+      </div>
+      <div class="modal-body">
+        <p>O objetivo deste trabalho é analisar os resultados obtidos de duas versões de um mesmo software, uma versão implementada usando a técnica Lógica Fuzzy e outra versão usando a técnica Redes Neurais Artificiais (RNA), ambas de inteligência computacional. Esse software ajudará a predizer o movimento do mercado de capitais e obter informações importantes para tomada de decisão por parte do investidor.</p>
+      </div>
+    </div>
+    <div id="modal-fuzzylogic" class="modal hide fade" style="display: none;">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Modelagem da Lógica Fuzzy</h3>
+      </div>
+      <div class="modal-body">
+        <p><img src="" id="imgModelagemFuzzyLogic" width="600" height="300" alt="Imagem da modelagem da lógica fuzzy"/></p>
+      </div>
+    </div>
+    <div id="modal-rna" class="modal hide fade" style="display: none;">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Modelagem da Redes Neurais</h3>
+      </div>
+      <div class="modal-body">
+        <p><img src="" id="imgModelagemRNA" width="600" height="400" alt="Imagem da modelagem das redes neurais"/></p>
+      </div>
+    </div>
+    
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/jquery.json-2.3.min.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', {packages: ['corechart']});
+        google.load('visualization', '1', {packages: ['table']});
+    </script>
+    
+    <script type="text/javascript" src="js/fuzzylogic.js"></script>
+    <script type="text/javascript" src="js/analisetecnica.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,26 @@
+        ___________________________________________        
+                       scilab-5.2.1
+
+                 Consórcio Scilab (DIGITEO)
+               Copyright (c) 1989-2010 (INRIA)
+               Copirraite (c) 1989-2007 (ENPC)
+        ___________________________________________        
+ 
+ 
+Execução de inicialização:
+  carregando ambiente inicial
+Start ANN Toolbox
+
+	Load macros
+
+	Load help
+
+	Load demos
+
+
+
+Aviso: redefinindo a função: pathconvert             . Utilize funcprot(0) para evitar esta mensagem
+
+Iniciando rna...
+
+Rna executada com sucesso.

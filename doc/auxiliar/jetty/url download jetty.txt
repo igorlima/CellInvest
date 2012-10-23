@@ -1,0 +1,9 @@
+
+
+http://docs.codehaus.org/display/JETTY/Downloading+Jetty
+
+
+http://dist.codehaus.org/jetty/
+
+
+http://dist.codehaus.org/jetty/jetty-hightide-7.6.0/

@@ -1,0 +1,7 @@
+{
+    "idDominio": null,
+    "limiteInferior": 0,
+    "limiteSuperior": 100,
+    "incluiLimiteInferior": true,
+    "incluiLimiteSuperior": true
+}

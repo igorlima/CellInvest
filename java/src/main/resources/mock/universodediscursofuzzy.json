@@ -1,0 +1,130 @@
+{
+    "nome": "MACD",
+    "dominio": {
+        "idDominio": null,
+        "limiteInferior": 0,
+        "limiteSuperior": 100,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true
+    },
+    "conjuntosFuzzy": [
+        {
+            "idConjFuzzy": null,
+            "nome": "MuitoBaixo",
+            "funcoes": [
+                {
+                    "idFuncao": null,
+                    "txFuncao": "1+x/(-35)",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 0,
+                        "limiteSuperior": 35,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true
+                    }
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "Baixo",
+            "funcoes": [
+                {
+                    "idFuncao": null,
+                    "txFuncao": "(x-20)/15",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 20,
+                        "limiteSuperior": 35,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false
+                    }
+                },
+                {
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-35)/(-15)",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 35,
+                        "limiteSuperior": 50,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true
+                    }
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "Neutro",
+            "funcoes": [
+                {
+                    "idFuncao": null,
+                    "txFuncao": "(x-35)/15",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 35,
+                        "limiteSuperior": 50,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false
+                    }
+                },
+                {
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-50)/(-15)",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 50,
+                        "limiteSuperior": 65,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false
+                    }
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "Alto",
+            "funcoes": [
+                {
+                    "idFuncao": null,
+                    "txFuncao": "(x-50)/15",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 50,
+                        "limiteSuperior": 65,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false
+                    }
+                },
+                {
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-65)/(-15)",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 65,
+                        "limiteSuperior": 80,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true
+                    }
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "MuitoAlto",
+            "funcoes": [
+                {
+                    "idFuncao": null,
+                    "txFuncao": "(x-65)/35",
+                    "dominio": {
+                        "idDominio": null,
+                        "limiteInferior": 65,
+                        "limiteSuperior": 100,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,299 @@
+{
+    "dominio": {
+        "limiteInferior": 100,
+        "limiteSuperior": 600,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true,
+        "idDominio": null
+    },
+    "nome": "GanhoPeso",
+    "idUniversoDeDiscursoFuzzy": null,
+    "conjuntosFuzzy": [
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 100,
+                        "limiteSuperior": 125,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-100)/(-25)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 100,
+                        "limiteSuperior": 150,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-100)/(50)"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 150,
+                        "limiteSuperior": 175,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-150)/(-25)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoIII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 150,
+                        "limiteSuperior": 175,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-150)/25"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 175,
+                        "limiteSuperior": 200,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-175)/(-25)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoIV",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 175,
+                        "limiteSuperior": 200,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-175)/25"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 200,
+                        "limiteSuperior": 210,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-200)/(-10)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoV",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 200,
+                        "limiteSuperior": 250,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-200)/50"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 250,
+                        "limiteSuperior": 300,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-250)/(-50)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoVI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 250,
+                        "limiteSuperior": 300,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-250)/50"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 300,
+                        "limiteSuperior": 350,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-300)/(-50)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoVII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 325,
+                        "limiteSuperior": 350,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-325)/25"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 350,
+                        "limiteSuperior": 400,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-350)/(-50)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoVIII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 350,
+                        "limiteSuperior": 400,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-350)/50"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 400,
+                        "limiteSuperior": 450,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-400)/(-50)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoIX",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 400,
+                        "limiteSuperior": 425,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-400)/25"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 425,
+                        "limiteSuperior": 450,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-425)/(-25)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoX",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 450,
+                        "limiteSuperior": 500,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-450)/50"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 500,
+                        "limiteSuperior": 600,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-500)/(-100)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "GanhoPesoXI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 500,
+                        "limiteSuperior": 600,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-500)/100"
+                }
+            ]
+        }
+    ]
+}

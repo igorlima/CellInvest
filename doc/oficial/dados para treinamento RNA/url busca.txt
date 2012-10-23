@@ -1,0 +1,17 @@
+//Abertura, Fechamento, Maximo, Minimo
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo=BBAS3&linhas=795&tipo_cotacao=2&delta=2500&atv_dado=10&atv_dado2=2&atv_dado3=8&atv_dado4=9
+
+//IFR
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo="+strAtivo+"&linhas=22&tipo_cotacao=2&atv_dado10=28
+
+//MACD
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo="+strAtivo+"&linhas=22&tipo_cotacao=2&atv_dado11=82&atv_dado12=83
+
+//Histograma
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo="+strAtivo+"&linhas=22&tipo_cotacao=2&atv_dado11=397
+
+//Estocastico
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo="+strAtivo+"&linhas=22&tipo_cotacao=2&atv_dado11=85
+
+//OBV
+http://custom.infomoney.com.br/rotinas/GeraDadosGrafico.asp?ativo="+strAtivo+"&linhas=22&tipo_cotacao=2&atv_dado11=84

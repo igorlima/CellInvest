@@ -1,0 +1,108 @@
+{
+    "dominio": {
+        "limiteInferior": 30,
+        "limiteSuperior": 90,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true,
+        "idDominio": null
+    },
+    "nome": "UmidadeRelativa",
+    "idUniversoDeDiscursoFuzzy": null,
+    "conjuntosFuzzy": [
+        {
+            "idConjFuzzy": null,
+            "nome": "UmidadeRelativaI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 30,
+                        "limiteSuperior": 50,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 50,
+                        "limiteSuperior": 60,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-50)/(-10)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "UmidadeRelativaII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 55,
+                        "limiteSuperior": 60,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-55)/5"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 60,
+                        "limiteSuperior": 70,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 70,
+                        "limiteSuperior": 75,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-70)/(-5)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "UmidadeRelativaIII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 70,
+                        "limiteSuperior": 75,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-70)/5"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 75,
+                        "limiteSuperior": 90,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                }
+            ]
+        }
+    ]
+}

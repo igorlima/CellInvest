@@ -1,0 +1,28 @@
+{
+    "nome": "PredicaoDoDesempenhoProdutivoDeFrangoDeCorte",
+    "idSistemaFuzzy": 1,
+    "maquinas": [
+        {
+            "idSistemaFuzzy": 1,
+            "idMaquinaInferencia": 1,
+            "prioridade": 1
+        }
+    ],
+    "universos": [
+        {
+            "idSistemaFuzzy": 1,
+            "prioridade": 1,
+            "idUniversoDeDiscursoFuzzy": 3
+        },
+        {
+            "idSistemaFuzzy": 1,
+            "prioridade": 2,
+            "idUniversoDeDiscursoFuzzy": 2
+        },
+        {
+            "idSistemaFuzzy": 1,
+            "prioridade": 3,
+            "idUniversoDeDiscursoFuzzy": 4
+        }
+    ]
+}

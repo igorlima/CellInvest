@@ -1,0 +1,175 @@
+{
+    "dominio": {
+        "limiteInferior": 23,
+        "limiteSuperior": 35,
+        "incluiLimiteInferior": true,
+        "incluiLimiteSuperior": true,
+        "idDominio": null
+    },
+    "nome": "TemperaturaDoAr",
+    "idUniversoDeDiscursoFuzzy": null,
+    "conjuntosFuzzy": [
+        {
+            "idConjFuzzy": null,
+            "nome": "TemperaturaI",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 23,
+                        "limiteSuperior": 24,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 24,
+                        "limiteSuperior": 26,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-24)/(-2)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "TemperaturaII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 25,
+                        "limiteSuperior": 25.5,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-25)/(0.5)"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 25.5,
+                        "limiteSuperior": 27,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 27,
+                        "limiteSuperior": 28.5,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-27)/(-1.5)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "TemperaturaIII",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 28,
+                        "limiteSuperior": 29,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 29,
+                        "limiteSuperior": 30,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-29)/(-1)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "TemperaturaIV",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 29,
+                        "limiteSuperior": 30,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-29)"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 30,
+                        "limiteSuperior": 32,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 32,
+                        "limiteSuperior": 33,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1+(x-32)/(-1)"
+                }
+            ]
+        },
+        {
+            "idConjFuzzy": null,
+            "nome": "TemperaturaV",
+            "funcoes": [
+                {
+                    "dominio": {
+                        "limiteInferior": 32,
+                        "limiteSuperior": 33,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": false,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "(x-32)"
+                },
+                {
+                    "dominio": {
+                        "limiteInferior": 33,
+                        "limiteSuperior": 35,
+                        "incluiLimiteInferior": true,
+                        "incluiLimiteSuperior": true,
+                        "idDominio": null
+                    },
+                    "idFuncao": null,
+                    "txFuncao": "1"
+                }
+            ]
+        }
+    ]
+}

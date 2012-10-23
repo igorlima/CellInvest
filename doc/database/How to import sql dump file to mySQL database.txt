@@ -1,0 +1,6 @@
+How to import sql dump file to mySQL database
+
+mysql -u username -p password database_name < filename.sql 
+mysql -u baseu01 -p h4z56s3 database01 < export.sql
+
+mysql.exe -u root -p bolsa < c:\Users\igorlima\Downloads\2011mar.sql
